@@ -5,7 +5,9 @@
 <br/>
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blue?style=for-the-badge&logo=anthropic)](https://claude.ai/code)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blue?style=for-the-badge&logo=anthropic)](https://claude.ai/code)
+[![Codex](https://img.shields.io/badge/OpenAI-Codex-412991?style=for-the-badge&logo=openai)](https://github.com/openai/codex)
+[![Gemini CLI](https://img.shields.io/badge/Gemini-CLI-4285F4?style=for-the-badge&logo=google)](https://github.com/google-gemini/gemini-cli)
 
 </div>
 
@@ -27,7 +29,9 @@
 
 > ⏱️ **30 秒安装**
 
-**方式一：让 Claude Code 安装**
+### Claude Code
+
+**方式一：让 Agent 安装**
 > 告诉 Claude Code：`Install idea-prism from https://github.com/gtskevin/idea-prism`
 
 **方式二：手动安装**
@@ -37,25 +41,47 @@ curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o 
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.claude/skills/idea-prism/perspectives.md
 ```
 
-安装后，在 Claude Code 中输入：
+### OpenAI Codex
+
+```bash
+mkdir -p ~/.codex/skills/idea-prism
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o ~/.codex/skills/idea-prism/SKILL.md
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.codex/skills/idea-prism/perspectives.md
 ```
-/idea-prism 我的研究想法：领导倡导员工使用AI会增加员工的表演性AI使用，进而削弱工作投入
+
+### Gemini CLI
+
+```bash
+mkdir -p ~/.gemini/skills/idea-prism
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o ~/.gemini/skills/idea-prism/SKILL.md
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.gemini/skills/idea-prism/perspectives.md
+```
+
+### 其他 AI Agent（Cursor、Windsurf 等）
+
+将 `SKILL.md` 和 `perspectives.md` 下载到你的 Agent 的自定义指令/skills 目录中。Idea Prism 是纯 prompt + 知识库，无需外部 API，理论上任何支持自定义 system prompt 的 AI Agent 都能使用。
+
+---
+
+安装后，输入你的研究想法：
+```
+/idea-prism 变革型领导是否可能通过增加员工的情感耗竭来削弱员工的创造力？
 ```
 
 预期输出：
 ```
 ━━━ Idea Prism v3 ━━━━━━━━━━━━━━━━━━━━
-原始想法诊断：组织推AI→员工装样子→投入下降
-理论谜题："为什么积极的组织行为产生消极结果？"
+原始想法诊断：变革型领导的积极光环下隐藏的代价
+理论谜题："为什么公认的积极领导风格可能抑制创造力的产生？"
 
-1. 💡 表演性AI使用何时"弄假成真"？
-   N:4 T:5 F:3 I:4 Ti:5 | 理论扩展
-2. 💡 表演性AI使用的团队级传染——"AI使用泡沫"
-   N:4 T:4 F:3 I:4 Ti:5 | 理论扩展
-3. 💡 "AI Washing"——谁在表演？领导象征性AI倡导
-   N:5 T:4 F:3 I:5 Ti:5 | 范式转换
+1. 💡 变革型领导的"过度激励"效应——情感耗竭的中介机制
+   N:4 T:5 F:3 I:4 Ti:4 | 理论扩展
+2. 💡 员工创造力作为前因：高创造力员工是否反而引发领导的控制行为？
+   N:5 T:4 F:3 I:5 Ti:3 | 范式转换
+3. 💡 变革型领导的日常波动——哪天的"激励"反而变成了"压力"？
+   N:3 T:3 F:4 I:3 Ti:4 | 实证补充
 
-⭐ 推荐：Idea 1，机制最清晰、风险可控
+⭐ 推荐：Idea 2，挑战了领导力→创造力的因果方向假设
 → 完整报告已在浏览器中打开
 ```
 
