@@ -11,9 +11,9 @@
 
 </div>
 
-> **你是谁？** 组织行为学 / 管理学者，需要找到有价值的研究选题。
-> **你面临什么问题？** "这个方向还有哪些没被做过？" "我的想法够不够创新？" "审稿人会怎么挑刺？"
-> **Idea Spark 帮你做什么？** 系统化地诊断、孵化、评估研究想法——像一个结构化的头脑风暴伙伴，把你的一个研究方向激发出多个创新角度。
+> [!NOTE]
+> **你是组织行为学 / 管理学者？** 你有一个研究方向，但不知道"这个角度有没有人做过"、"审稿人会怎么挑刺"、"还能怎么创新"。
+> **Idea Spark** 像一个结构化的头脑风暴伙伴，从一个研究方向系统化地激发出多个创新角度——诊断你的想法、跨域寻找灵感、预判审稿人批评、评估理论贡献。
 
 ## Highlights
 
@@ -27,39 +27,54 @@
 
 ## Quick Start
 
-> ⏱️ **30 秒安装**
+> ⏱️ **30 秒安装，无需编程基础**
 
-### Claude Code
+### 方式一：告诉你的 AI（推荐，最简单）
 
-**方式一：让 Agent 安装**
-> 告诉 Claude Code：`Install idea-spark from https://github.com/gtskevin/idea-spark`
+直接在你的 AI 工具中发送以下指令：
 
-**方式二：手动安装**
+| 平台 | 复制这条指令发送给你的 AI |
+|------|-------------------------|
+| **Claude Code** | `Install idea-spark from https://github.com/gtskevin/idea-spark` |
+| **OpenAI Codex** | `Install idea-spark from https://github.com/gtskevin/idea-spark` |
+| **Gemini CLI** | `Install idea-spark from https://github.com/gtskevin/idea-spark` |
+| **Cursor** | 把 SKILL.md 和 perspectives.md 下载后放入 `.cursor/rules/` 目录 |
+| **Windsurf** | 把 SKILL.md 和 perspectives.md 下载后放入 `.windsurf/rules/` 目录 |
+| **其他 AI** | 将 SKILL.md 和 perspectives.md 放入自定义指令/skills 目录即可 |
+
+> 💡 **完全不会编程？** 打开你的 AI 工具（比如 Claude Code），直接粘贴上面那条指令，AI 会自动帮你安装好。之后只需要输入 `/idea-spark 你的研究方向` 就能开始使用。
+
+### 方式二：手动安装
+
+<details>
+<summary>Claude Code</summary>
+
 ```bash
 mkdir -p ~/.claude/skills/idea-spark
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.claude/skills/idea-spark/SKILL.md
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.claude/skills/idea-spark/perspectives.md
 ```
+</details>
 
-### OpenAI Codex
+<details>
+<summary>OpenAI Codex</summary>
 
 ```bash
 mkdir -p ~/.codex/skills/idea-spark
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.codex/skills/idea-spark/SKILL.md
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.codex/skills/idea-spark/perspectives.md
 ```
+</details>
 
-### Gemini CLI
+<details>
+<summary>Gemini CLI</summary>
 
 ```bash
 mkdir -p ~/.gemini/skills/idea-spark
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.gemini/skills/idea-spark/SKILL.md
 curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.gemini/skills/idea-spark/perspectives.md
 ```
-
-### 其他 AI Agent（Cursor、Windsurf 等）
-
-将 `SKILL.md` 和 `perspectives.md` 下载到你的 Agent 的自定义指令/skills 目录中。Idea Spark 是纯 prompt + 知识库，无需外部 API，理论上任何支持自定义 system prompt 的 AI Agent 都能使用。
+</details>
 
 ---
 
@@ -142,6 +157,12 @@ Step 4: 文献检索指导 + 推荐 → 主动推荐最强想法
 <summary>为什么不直接问 ChatGPT/Claude？</summary>
 
 直接问 AI 是随机发散。Idea Spark 强制系统化：评估起点→扫描 7 类→跨域连接→质量评估→审稿人预判→主动推荐。更全面、更有结构，且输出完整 HTML 报告。
+</details>
+
+<details>
+<summary>我不太会编程，能用吗？</summary>
+
+完全可以。Idea Spark 是纯 prompt + 知识库，安装只需要让 AI 帮你操作。使用时只需要输入 `/idea-spark 你的研究方向`，所有分析过程由 AI 自动完成。
 </details>
 
 ## Contributing
