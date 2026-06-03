@@ -1,4 +1,4 @@
-# Idea Prism — Innovation Perspective Knowledge Base
+# Idea Spark — Innovation Perspective Knowledge Base
 
 7 meta-categories with sub-perspectives for systematically exploring research innovation space in organizational behavior and management.
 
