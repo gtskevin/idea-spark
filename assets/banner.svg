@@ -6,28 +6,44 @@
         .title { fill: #f1f5f9; }
         .sub { fill: #94a3b8; }
         .pill-bg { fill: #1e293b; }
+        .spark { fill: #fbbf24; }
+        .spark-inner { fill: #fde68a; }
       }
     </style>
+    <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
   </defs>
   <rect class="bg" width="800" height="200" rx="16" fill="#f8fafc"/>
-  <polygon points="120,60 160,140 80,140" fill="none" stroke="#6366f1" stroke-width="3"/>
-  <line x1="60" y1="100" x2="120" y2="100" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="120" y1="60" x2="180" y2="50" stroke="#ef4444" stroke-width="2"/>
-  <line x1="120" y1="60" x2="160" y2="45" stroke="#16a34a" stroke-width="2"/>
-  <line x1="120" y1="60" x2="140" y2="35" stroke="#3b82f6" stroke-width="2"/>
-  <line x1="160" y1="140" x2="200" y2="155" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="430" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" class="title" fill="#0f172a">
-    Idea Prism
+
+  <!-- Spark icon: a 4-point star burst -->
+  <g transform="translate(120,100)">
+    <!-- Outer glow -->
+    <circle cx="0" cy="0" r="48" fill="#fef3c7" opacity="0.3"/>
+    <!-- Main spark shape - 4 point star -->
+    <path d="M0,-40 C6,-12 12,-6 40,0 C12,6 6,12 0,40 C-6,12 -12,6 -40,0 C-12,-6 -6,-12 0,-40Z" fill="url(#sparkGrad)" class="spark"/>
+    <!-- Inner spark -->
+    <path d="M0,-18 C3,-6 6,-3 18,0 C6,3 3,6 0,18 C-3,6 -6,3 -18,0 C-6,-3 -3,-6 0,-18Z" fill="#fde68a" class="spark-inner"/>
+    <!-- Tiny secondary sparks -->
+    <circle cx="28" cy="-28" r="3" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="-32" cy="-20" r="2" fill="#f59e0b" opacity="0.5"/>
+    <circle cx="20" cy="30" r="2.5" fill="#fbbf24" opacity="0.5"/>
+    <circle cx="-22" cy="28" r="2" fill="#f59e0b" opacity="0.4"/>
+  </g>
+
+  <text x="440" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="bold" class="title" fill="#0f172a">
+    Idea Spark
   </text>
-  <text x="430" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" class="sub" fill="#64748b">
-    AI 驱动的学术研究想法孵化器 — 一个方向，折射出多个创新角度
+  <text x="440" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" class="sub" fill="#64748b">
+    AI 驱动的学术研究想法孵化器 — 一个方向，激发多个创新角度
   </text>
-  <rect x="290" y="140" width="120" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
-  <text x="350" y="158" text-anchor="middle" font-family="monospace" font-size="12" fill="#818cf8">
-    /idea-prism
+  <rect x="290" y="138" width="130" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
+  <text x="355" y="156" text-anchor="middle" font-family="monospace" font-size="12" fill="#fbbf24">
+    /idea-spark
   </text>
-  <rect x="425" y="140" width="150" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
-  <text x="500" y="158" text-anchor="middle" font-family="monospace" font-size="12" fill="#60a5fa">
+  <rect x="435" y="138" width="150" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
+  <text x="510" y="156" text-anchor="middle" font-family="monospace" font-size="12" fill="#60a5fa">
     OB · 管理学 · AI
   </text>
 </svg>

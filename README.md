@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Idea Prism — AI 驱动的学术研究想法孵化器" width="800">
+<img src="assets/banner.svg" alt="Idea Spark — AI 驱动的学术研究想法孵化器" width="800">
 
 <br/>
 
@@ -13,7 +13,7 @@
 
 > **你是谁？** 组织行为学 / 管理学者，需要找到有价值的研究选题。
 > **你面临什么问题？** "这个方向还有哪些没被做过？" "我的想法够不够创新？" "审稿人会怎么挑刺？"
-> **Idea Prism 帮你做什么？** 系统化地诊断、孵化、评估研究想法——像一个结构化的头脑风暴伙伴，把你的一个研究方向折射出多个创新角度。
+> **Idea Spark 帮你做什么？** 系统化地诊断、孵化、评估研究想法——像一个结构化的头脑风暴伙伴，把你的一个研究方向激发出多个创新角度。
 
 ## Highlights
 
@@ -32,45 +32,45 @@
 ### Claude Code
 
 **方式一：让 Agent 安装**
-> 告诉 Claude Code：`Install idea-prism from https://github.com/gtskevin/idea-prism`
+> 告诉 Claude Code：`Install idea-spark from https://github.com/gtskevin/idea-spark`
 
 **方式二：手动安装**
 ```bash
-mkdir -p ~/.claude/skills/idea-prism
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o ~/.claude/skills/idea-prism/SKILL.md
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.claude/skills/idea-prism/perspectives.md
+mkdir -p ~/.claude/skills/idea-spark
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.claude/skills/idea-spark/SKILL.md
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.claude/skills/idea-spark/perspectives.md
 ```
 
 ### OpenAI Codex
 
 ```bash
-mkdir -p ~/.codex/skills/idea-prism
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o ~/.codex/skills/idea-prism/SKILL.md
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.codex/skills/idea-prism/perspectives.md
+mkdir -p ~/.codex/skills/idea-spark
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.codex/skills/idea-spark/SKILL.md
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.codex/skills/idea-spark/perspectives.md
 ```
 
 ### Gemini CLI
 
 ```bash
-mkdir -p ~/.gemini/skills/idea-prism
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/SKILL.md -o ~/.gemini/skills/idea-prism/SKILL.md
-curl -sL https://raw.githubusercontent.com/gtskevin/idea-prism/main/perspectives.md -o ~/.gemini/skills/idea-prism/perspectives.md
+mkdir -p ~/.gemini/skills/idea-spark
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/SKILL.md -o ~/.gemini/skills/idea-spark/SKILL.md
+curl -sL https://raw.githubusercontent.com/gtskevin/idea-spark/main/perspectives.md -o ~/.gemini/skills/idea-spark/perspectives.md
 ```
 
 ### 其他 AI Agent（Cursor、Windsurf 等）
 
-将 `SKILL.md` 和 `perspectives.md` 下载到你的 Agent 的自定义指令/skills 目录中。Idea Prism 是纯 prompt + 知识库，无需外部 API，理论上任何支持自定义 system prompt 的 AI Agent 都能使用。
+将 `SKILL.md` 和 `perspectives.md` 下载到你的 Agent 的自定义指令/skills 目录中。Idea Spark 是纯 prompt + 知识库，无需外部 API，理论上任何支持自定义 system prompt 的 AI Agent 都能使用。
 
 ---
 
 安装后，输入你的研究想法：
 ```
-/idea-prism 变革型领导是否可能通过增加员工的情感耗竭来削弱员工的创造力？
+/idea-spark 变革型领导是否可能通过增加员工的情感耗竭来削弱员工的创造力？
 ```
 
 预期输出：
 ```
-━━━ Idea Prism v3 ━━━━━━━━━━━━━━━━━━━━
+━━━ Idea Spark ━━━━━━━━━━━━━━━━━━━━
 原始想法诊断：变革型领导的积极光环下隐藏的代价
 理论谜题："为什么公认的积极领导风格可能抑制创造力的产生？"
 
@@ -110,11 +110,11 @@ Step 4: 文献检索指导 + 推荐 → 主动推荐最强想法
 ## Usage
 
 ```bash
-/idea-prism "我想研究远程办公中的领导力"     # 完整分析
-/idea-prism --diagnose "abusive supervision" # 只做诊断
-/idea-prism --incubate "正念→情绪→创造力"    # 只做孵化
-/idea-prism --journal amj "voice行为"         # 指定期刊
-/idea-prism                                    # 交互式引导
+/idea-spark "我想研究远程办公中的领导力"     # 完整分析
+/idea-spark --diagnose "abusive supervision" # 只做诊断
+/idea-spark --incubate "正念→情绪→创造力"    # 只做孵化
+/idea-spark --journal amj "voice行为"         # 指定期刊
+/idea-spark                                    # 交互式引导
 ```
 
 | 期刊 | 加权维度 |
@@ -129,7 +129,7 @@ Step 4: 文献检索指导 + 推荐 → 主动推荐最强想法
 <details>
 <summary>能保证生成的想法没人做过吗？</summary>
 
-**不能。** Idea Prism 是启发式工具，不是文献数据库。每个想法都附具体检索策略——最终验证是你的责任。报告明确标注"文献检索状态：未检索"。
+**不能。** Idea Spark 是启发式工具，不是文献数据库。每个想法都附具体检索策略——最终验证是你的责任。报告明确标注"文献检索状态：未检索"。
 </details>
 
 <details>
@@ -141,7 +141,7 @@ Step 4: 文献检索指导 + 推荐 → 主动推荐最强想法
 <details>
 <summary>为什么不直接问 ChatGPT/Claude？</summary>
 
-直接问 AI 是随机发散。Idea Prism 强制系统化：评估起点→扫描 7 类→跨域连接→质量评估→审稿人预判→主动推荐。更全面、更有结构，且输出完整 HTML 报告。
+直接问 AI 是随机发散。Idea Spark 强制系统化：评估起点→扫描 7 类→跨域连接→质量评估→审稿人预判→主动推荐。更全面、更有结构，且输出完整 HTML 报告。
 </details>
 
 ## Contributing

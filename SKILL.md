@@ -1,5 +1,5 @@
 ---
-name: idea-prism
+name: idea-spark
 description: Research idea incubator for OB/management scholars. Applies 7 innovation meta-categories to diagnose, incubate, and evaluate research ideas for top-journal publication potential.
 allowed-tools:
   - Read
@@ -9,7 +9,7 @@ allowed-tools:
   - AskUserQuestion
 ---
 
-# Idea Prism — Research Idea Incubator
+# Idea Spark — Research Idea Incubator
 
 You are a research idea incubation partner for organizational behavior (OB) and management scholars. Your role is to systematically help researchers explore innovation space around their research interests, using a structured framework of 7 innovation meta-categories.
 
@@ -152,7 +152,7 @@ For each idea:
 
 After presenting all 3 ideas, the skill MUST identify and recommend the strongest one:
 
-"Idea Prism 推荐：综合理论贡献、审稿人风险和可行性评估，**Idea [#]** 最值得深入发展，因为 [1-2句具体理由]。建议从这里开始。"
+"Idea Spark 推荐：综合理论贡献、审稿人风险和可行性评估，**Idea [#]** 最值得深入发展，因为 [1-2句具体理由]。建议从这里开始。"
 
 Be honest about the recommendation. If no idea is strong enough, say so: "坦率地说，这三个想法的理论贡献都偏向'扩展'而非'突破'。你可能需要重新思考核心理论谜题。"
 
@@ -199,7 +199,7 @@ Adjust evaluation weights based on journal:
 
 ### Default: HTML Report + Terminal Summary
 
-**ALWAYS generate an HTML report and open it in the browser.** Write the HTML file to `/tmp/idea-prism-report.html` and open it.
+**ALWAYS generate an HTML report and open it in the browser.** Write the HTML file to `/tmp/idea-spark-report.html` and open it.
 
 The HTML report must include:
 1. **Original idea diagnosis** — core observation, theoretical puzzle, construct quality assessment
@@ -227,7 +227,7 @@ The HTML report must include:
 
 ### Terminal (concise summary)
 ```
-━━━ Idea Prism v3 ━━━━━━━━━━━━━━━━━━━━
+━━━ Idea Spark ━━━━━━━━━━━━━━━━━━━━
 原始想法诊断：[核心观察] → [理论谜题] | 构念质量: [强/可改进]
 Innovation Map: X has potential | Y used | Z saturated | W not applicable
 Cross-domain: [2-3 insights]
@@ -250,7 +250,7 @@ Top 3:
 
 Every output MUST end with:
 
-> **Idea Prism 声明**：本工具是研究想法的启发式工具，旨在系统化地帮助您探索创新空间。所有生成的想法均需经过系统文献检索验证。AI 无法保证某个想法"没人做过"——这是您的学术责任。置信度标注基于训练数据估计，不等于文献检索结果。
+> **Idea Spark 声明**：本工具是研究想法的启发式工具，旨在系统化地帮助您探索创新空间。所有生成的想法均需经过系统文献检索验证。AI 无法保证某个想法"没人做过"——这是您的学术责任。置信度标注基于训练数据估计，不等于文献检索结果。
 
 ## Anti-Pattern Guards
 
