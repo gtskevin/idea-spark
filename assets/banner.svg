@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .title { fill: #f1f5f9; }
+        .sub { fill: #94a3b8; }
+        .pill-bg { fill: #1e293b; }
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="800" height="200" rx="16" fill="#f8fafc"/>
+  <polygon points="120,60 160,140 80,140" fill="none" stroke="#6366f1" stroke-width="3"/>
+  <line x1="60" y1="100" x2="120" y2="100" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="120" y1="60" x2="180" y2="50" stroke="#ef4444" stroke-width="2"/>
+  <line x1="120" y1="60" x2="160" y2="45" stroke="#16a34a" stroke-width="2"/>
+  <line x1="120" y1="60" x2="140" y2="35" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="160" y1="140" x2="200" y2="155" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="430" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" class="title" fill="#0f172a">
+    Idea Prism
+  </text>
+  <text x="430" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" class="sub" fill="#64748b">
+    AI 驱动的学术研究想法孵化器 — 一个方向，折射出多个创新角度
+  </text>
+  <rect x="290" y="140" width="120" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
+  <text x="350" y="158" text-anchor="middle" font-family="monospace" font-size="12" fill="#818cf8">
+    /idea-prism
+  </text>
+  <rect x="425" y="140" width="150" height="26" rx="13" class="pill-bg" fill="#1e293b"/>
+  <text x="500" y="158" text-anchor="middle" font-family="monospace" font-size="12" fill="#60a5fa">
+    OB · 管理学 · AI
+  </text>
+</svg>
